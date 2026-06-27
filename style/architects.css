@@ -40,7 +40,7 @@ main {
   margin: 0 auto;
 }
 main > section {
-  margin margin-top: 130px;
+   margin-top: 130px;
 }
 .section-title{
   font-size: 2.8rem;
@@ -115,7 +115,7 @@ main > section {
 /* feature section related style */
 #feature-section-title{
   border-left: 5px solid #ff900e;
-  padding: 20px;
+  padding-left: 20px;
 }
 .feature{
   gap:140px;
@@ -134,6 +134,40 @@ main > section {
   margin-bottom: 0px;
   
 }
+
+.feature-architect img{
+  width: 100%;
+}
+
+#experiance-bedge{
+  padding:  45px 42px;
+  font-size: 3.5rem;
+  font-weight: 700; 
+ 
+ 
+  
+}
+#experiance-year{
+    
+   font-size: 1.5rem;
+  font-weight: 500; 
+}
+ 
+   .btns-primary{
+  background-color: #ff900e;
+  color: white;
+  padding: 42px 45px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+   margin-left: -90px;
+  margin-top: -90px;
+  align-items: center;
+  justify-content: center;
+}
+
+ 
 
 
 /* some-facts related style */
@@ -178,12 +212,28 @@ main > section {
 .sponsor-companies img{
 filter: grayscale(100%);
 }
+/* footer shared style */
+.fot{
+  background-color: #FFF4E7;
+  padding: 15PX;
+  justify-content: center;
+   text-align: center;
+  margin-left: 240px;
+  margin-right: 240px;
+  margin-bottom: 62px;
+  margin-top: 29PX;
+  
+}
+
+
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
   .navbar,
   .nav-links,
-  .teams {
+  .feature,
+  .teams,
+  .fot {
     flex-direction: column;
   }
   .team-img-container,
@@ -191,6 +241,11 @@ filter: grayscale(100%);
    .sponsor-companies{
     grid-template-columns: 1fr;
   }
+  .btns-primary{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
   .fact-container{
     justify-items: center;
     gap: 24px;
@@ -202,15 +257,32 @@ filter: grayscale(100%);
     justify-items: center;
     gap: 24px;
   }
+  .fot{
+    justify-content: center;
+   
+     margin-left: 240px;
+  margin-right: 240px;
+  margin-bottom: 62px;
+  margin-top: 29PX;
+  }
 }
 
 /* medium size device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .teams{
+  .teams, .feature{
     flex-direction: column;
+  }
+  .btns-primary{
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .our-features{
     margin-left: 50px auto;
+  }
+  .sponsor-companies, .fact-container{
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 50px;
   }
 }
 
